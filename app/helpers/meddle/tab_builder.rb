@@ -10,7 +10,7 @@ module Meddle
     end
 
     def blocks
-      @tabs.inject('') do |blocks, tabs|
+      @tabs.inject('') do |blocks, tab|
         blocks << content_tag(:div, tab.attributes, &tab.block)
       end
     end
